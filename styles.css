@@ -66,6 +66,36 @@ footer {
     animation: fadeAnimation 4s infinite;
 }
 
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+}
+
+#about img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#about .description {
+    flex: 1;
+    margin-left: 40px;
+}
+
+#about .description h2 {
+    color: #007bff;
+}
+
+#about .description p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 @keyframes fadeAnimation {
     0%, 100% {
         opacity: 0;
