@@ -120,10 +120,6 @@ footer {
     }
 }
 
-/* Teaching Programs section styles */
-/* Existing styles remain the same */
-
-/* Teaching Programs section styles */
 #programs {
     border: 1px solid #007bff;
     padding: 20px;
@@ -169,6 +165,11 @@ footer {
     margin-top: 10px;
 }
 
+/* Adding styles for greying out other levels on hover */
+.level:hover ~ .level {
+    filter: grayscale(1);
+    transition: filter 0.3s;
+}
 
 
 /* Back to Top button styles */
