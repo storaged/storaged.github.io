@@ -74,3 +74,32 @@ footer {
         opacity: 1;
     }
 }
+
+/* Existing styles remain the same */
+
+/* Back to Top button styles */
+.back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.back-to-top-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Show the button when the user scrolls down 200px from the top of the page */
+@media screen and (min-height: 200px) {
+    .back-to-top-btn {
+        display: block;
+    }
+}
+
