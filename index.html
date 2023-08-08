@@ -27,6 +27,7 @@
             <p>Hello, I am a passionate English and German language teacher with several years of experience. I believe in making language learning fun and interactive for my students.</p>
             <p>Here's a picture of me during a language workshop:</p>
             <img src="https://via.placeholder.com/400" alt="Teacher at a workshop">
+            <button class="back-to-top-btn" onclick="scrollToTop()">Back to Top</button>
         </section>
 
         <section id="slideshow">
@@ -52,6 +53,7 @@
                 <source src="https://via.placeholder.com/640x360" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <button class="back-to-top-btn" onclick="scrollToTop()">Back to Top</button>
         </section>
 
         <section id="background">
@@ -59,6 +61,7 @@
             <p>I have a Bachelor's degree in Linguistics and a Master's degree in Education. I've also attended numerous language teaching workshops and earned certifications from recognized institutions.</p>
             <p>Here's a picture of one of my language certificates:</p>
             <img src="https://via.placeholder.com/300" alt="Language Certificate">
+            <button class="back-to-top-btn" onclick="scrollToTop()">Back to Top</button>
         </section>
 
         <section id="testimonials">
@@ -71,6 +74,8 @@
                 <p>"The teacher's teaching methods are effective and engaging. I've grown more confident in speaking both English and German, thanks to her guidance."</p>
                 <cite>Jane Smith, Student</cite>
             </blockquote>
+            <button class="back-to-top-btn" onclick="scrollToTop()">Back to Top</button>
+
         </section>
     </main>
 
@@ -106,6 +111,12 @@
             targetSection.scrollIntoView({ behavior: 'smooth' });
         });
     });
+
+    // JavaScript for Back to Top button
+    function scrollToTop() {
+        const targetSection = document.querySelector('header');
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
     </script>
 
 </body>
