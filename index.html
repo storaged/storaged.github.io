@@ -1,46 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to My GitHub Repositories</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        h1 {
-            margin-top: 50px;
-        }
-
-        .repo-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .repo-list li {
-            margin: 10px;
-        }
-
-        .repo-list li a {
-            text-decoration: none;
-            color: #007bff;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English and German Language Teacher</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Repositories</h1>
-    <p>Check out my publicly available repositories:</p>
+    <header>
+        <h1>Welcome to My Language Classes</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#programs">Teaching Programs</a></li>
+                <li><a href="#background">Professional Background</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <ul class="repo-list">
-        <!-- Replace the URLs and names with your own repository information -->
-        <li><a href="https://github.com/your-username/repo-1" target="_blank">Repo 1</a></li>
-        <li><a href="https://github.com/your-username/repo-2" target="_blank">Repo 2</a></li>
-        <li><a href="https://github.com/your-username/repo-3" target="_blank">Repo 3</a></li>
-        <!-- Add more repositories as needed -->
-    </ul>
+    
+    <main>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I am a passionate English and German language teacher with several years of experience. I believe in making language learning fun and interactive for my students.</p>
+            <p>Here's a picture of me during a language workshop:</p>
+            <img src="https://via.placeholder.com/400" alt="Teacher at a workshop">
+        </section>
+
+        <section id="slideshow">
+        <h2>Slideshow</h2>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/800x400?text=Image+1" alt="Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/800x400?text=Image+2" alt="Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://via.placeholder.com/800x400?text=Image+3" alt="Image 3">
+            </div>
+        </div>
+        </section>
+        
+        <section id="programs">
+            <h2>Teaching Programs</h2>
+            <p>I offer various language programs tailored to different levels and interests. From beginner courses to advanced conversation classes, you'll find something that suits you.</p>
+            <p>Check out this video showcasing some of the activities we do in our language classes:</p>
+            <video width="640" height="360" controls>
+                <source src="https://via.placeholder.com/640x360" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="background">
+            <h2>Professional Background</h2>
+            <p>I have a Bachelor's degree in Linguistics and a Master's degree in Education. I've also attended numerous language teaching workshops and earned certifications from recognized institutions.</p>
+            <p>Here's a picture of one of my language certificates:</p>
+            <img src="https://via.placeholder.com/300" alt="Language Certificate">
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"Learning with the teacher has been an amazing experience. She's patient, encouraging, and always brings creativity into our classes. I've seen significant improvement in my language skills since I started learning with her."</p>
+                <cite>John Doe, Student</cite>
+            </blockquote>
+            <blockquote>
+                <p>"The teacher's teaching methods are effective and engaging. I've grown more confident in speaking both English and German, thanks to her guidance."</p>
+                <cite>Jane Smith, Student</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact Me: email@example.com</p>
+    </footer>
 
     <script>
-        // You can add JavaScript code here if needed
+    // JavaScript for Image Slideshow
+    let slideIndex = 0;
+
+    function showSlides() {
+        const slides = document.querySelectorAll('.slide');
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+    showSlides();
+
+    // JavaScript for Smooth Scrolling
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const targetSectionId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetSectionId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
     </script>
+
 </body>
 </html>
