@@ -26,7 +26,8 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s, color 0.3s; /* Added color transition */
+    color: #333; /* Dark grey text color */
 }
 
 .menu-item:hover {
