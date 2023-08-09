@@ -7,6 +7,7 @@ body {
     background-color: #f0f7ff; /* Light blue background color */
 }
 
+/* Header styles */
 header {
     background-color: #f9f9f9;
     border-bottom: 1px solid #ccc;
@@ -27,7 +28,7 @@ header {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s, color 0.3s; /* Added color transition */
-    color: #333; /* Dark grey text color */
+    color: #000; /* Black text color */
 }
 
 .menu-item:hover {
